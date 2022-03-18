@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>UTS PTI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/9d53a2f771.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="cover-container d-flex p-3 mx-auto flex-column">
+          <header class="mb-auto">
+              <div>
+                <h3 class="float-md-start mb-0">
+                  <i class="fas fa-trophy fa-2x"></i>
+                  Mid Exam
+                </h3>
+              </div>
+          </header>
+      </div>
+    </nav>
+    <div class="container container-fluid-md d-flex p-6 h-50 flex-column justify-content-center align-items-center" id="container">
+      <div id="dashboard" class="mb-3 mx-md-5 w-100">
+        <div class="p-3 mb-2 bg-white rounded-3">
+          <div id="statusBar" class="row w-100 m-0">
+
+          <!-- Makan -->
+          <div class="col-sm-6 d-flex gap-2 align-items-center justify-content-between">
+            <img src="https://img.icons8.com/external-flat-icons-pause-08/60/000000/external-eat-travel-flat-icons-pause-08.png"/>
+            <div class="col">
+              <div class="progress">
+                <div id="makan-progressBar" class="progress-bar" role="progressbar"></div>
+              </div>
+            </div>
+          </div>
+          <!----------->
+          
+          <!-- Tidur -->
+          <div class="col-sm-6 d-flex gap-2 align-items-center justify-content-between">
+            <img src="https://img.icons8.com/external-photo3ideastudio-lineal-color-photo3ideastudio/60/000000/external-sleep-home-activity-photo3ideastudio-lineal-color-photo3ideastudio.png"/>
+            <div class="col">
+              <div class="progress">
+                <div id="tidur-progressBar" class="progress-bar" role="progressbar"></div>
+              </div>
+            </div>
+          </div>
+          <!----------->
+  
+          <!-- Main -->
+          <div class="col-sm-6 d-flex gap-2 align-items-center justify-content-between">
+            <img src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/60/000000/external-gamepad-game-development-icongeek26-linear-colour-icongeek26-2.png"/>
+            <div class="col">
+              <div class="progress">
+                <div id="main-progressBar" class="progress-bar" role="progressbar"></div>
+              </div>
+            </div>
+          </div>
+          <!----------->
+  
+          <!-- Belajar -->
+          <div class="col-sm-6 d-flex gap-2 align-items-center justify-content-between">
+            <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/50/000000/external-study-university-flaticons-lineal-color-flat-icons-2.png"/>
+            <div class="col">
+              <div class="progress">
+                <div id="belajar-progressBar" class="progress-bar" role="progressbar"></div>
+              </div>
+            </div>
+          </div>
+          <!----------->
+
+          <h5 id="semester" class="flex-fill text-center">Semester <span id="semester-awal"></span></h5>
+        </div>
+      </div>
+      </div>
+      <div class="gap-2 mb-3 d-flex justify-content-between">
+        <h6 id="nama">Good Morning <span id="nama-player"></span></h6>
+      </div>
+      <h6 id="jam"></h6>
+
+      <div id="game-control" class="gap-2 d-flex flex-column justify-content-center align-items-center">
+        <div class="row gy-2" id="button-list">
+          <div class="col-sm-6 d-grid mx-auto">
+              <button id="makan-button" data-name="makan" type="button" class="togglebutton button btn-dark btn-sm rounded-pill" data-bs-toggle="button" autocomplete="off">Makan</button>
+          </div>
+          <div class="col-sm-6 d-grid mx-auto">
+            <button id="tidur-button" data-name="tidur" type="button" class="togglebutton button btn-dark btn-sm rounded-pill" data-bs-toggle="button" autocomplete="off">Tidur</button>
+        </div>
+          <div class="col-sm-6 d-grid mx-auto">
+              <button id="main-button" data-name="main" type="button" class="togglebutton button btn-dark btn-sm rounded-pill" data-bs-toggle="button" autocomplete="off">Main</button>
+          </div>
+          <div class="col-sm-6 d-grid mx-auto">
+              <button id="belajar-button" data-name="belajar" type="button" class="togglebutton button btn-dark btn-sm rounded-pill" data-bs-toggle="button" autocomplete="off">Belajar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="background-img"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+  
